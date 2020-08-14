@@ -28,7 +28,7 @@ body {
 	font-size: 30px;
 }
 
-.buttons a {
+.buttons:link, .buttons:visited a {
          background-color: #800000;
          border: none;
          padding: 20px 34px;
@@ -39,7 +39,22 @@ body {
          margin: 4px 2px;
          cursor: pointer;
          text-decoration: none;
-		 color: #0080ff;
+	 color: #0080ff;
+	 transition-duration: 200ms;
+         }
+
+.buttons:hover, .buttons:active a {
+         background-color: #db441a;
+         border: none;
+         padding: 20px 34px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 40px;
+         margin: 4px 2px;
+         cursor: pointer;
+         text-decoration: none;
+	 color: #36a1d6;
          }
 
 hr.hl {
